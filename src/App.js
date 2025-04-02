@@ -1,8 +1,8 @@
 import React from 'react';
-import Portfolio from './portfolio';
+import Sliding from "../src/slidingeffect"
 function App() {
   return (
-      <Portfolio />
+      <Sliding />
   );
 }
 
