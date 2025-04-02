@@ -1,5 +1,6 @@
 import React from "react";
 import "./portfolio.css";
+import { useState } from "react";
 import github from "./asserts/github.png";
 import linkedin from "./asserts/Linkedin.png";
 import phone from "./asserts/Phone.png";
@@ -10,7 +11,44 @@ import Webquest from "./asserts/kcg-webquest.jpg";
 import Hackathon from "./asserts/kcg-hackathon.jpg";
 import Spotify from "./asserts/spotifytemplate.png";
 import Parking from "./asserts/parking.png";
+import Certificate from "./asserts/certificates.jpg";
+import Reactjs from "./asserts/react.png";
+import iconphone from "./asserts/phone-icon.png";
+import iconmail from "./asserts/email-icon.png";
 function Portfolio() {
+  // certificate
+
+   const certificates = [
+          {
+              id: 1,
+              title: "App Project",
+              description: "This is a completion certificate of React JS received from the Infosys.",
+              image: Reactjs,
+          },
+          {
+              id: 2,
+              title: "Web Quest",
+              description: "This is a certificate of contribution received from the web quest project.",
+              image: Certificate,
+          },
+          {
+              id: 3,
+              title: "KCG Innothon",
+              description: "This is a certificate of contribution received from the Innothon project.",
+              image: Innothon,
+          },
+      ];
+  
+      const [activeIndex, setActiveIndex] = useState(1);
+  
+      const prevSlide = () => {
+          setActiveIndex((prev) => (prev === 0 ? certificates.length - 1 : prev - 1));
+      };
+  
+      const nextSlide = () => {
+          setActiveIndex((prev) => (prev === certificates.length - 1 ? 0 : prev + 1));
+      };
+
   return (
     <div>
         {/* Navbar */}
@@ -69,12 +107,12 @@ function Portfolio() {
             <h3 className="participation-text">Participations</h3>
           </div> 
           <div>
-            <button  className="btn2">Explore More &gt;&gt;</button>
+            <button  className="btn2">Explore More &g t;&gt;</button>
           </div>
         </div>
         <div className="participation-card-container">
             <div className="circleleft">
-                <h3 style={{color:"#313131",fontSize:25,margin:0,paddingLeft:7}}>&lt;</h3>
+            <button style={{color:"#313131",fontSize:25,margin:0,paddingLeft:10,background:"none",border:"none",paddingTop:5,cursor:"pointer"}}>&lt;</button>
             </div>
                <div className="card-container">
                  <div className="card">
@@ -97,7 +135,7 @@ function Portfolio() {
                  </div>
                 </div>
                 <div className="circleright">
-                <h3 style={{color:"#313131",fontSize:25,margin:0,paddingLeft:7}}>&gt;</h3>
+                <button style={{color:"#313131",fontSize:25,margin:0,paddingLeft:10,background:"none",border:"none",paddingTop:5,cursor:"pointer"}}>&gt;</button>
             </div>
         </div>
        <hr></hr>  
@@ -106,7 +144,7 @@ function Portfolio() {
 
        <div className="participation-container">
           <div className="participation">
-            <h3 className="projects-text">Projects</h3>
+            <h3 style={{color: '#FFF',marginLeft:800}}>Projects</h3>
           </div> 
           <div>
             <button  className="btn2">Explore More &gt;&gt;</button>
@@ -123,7 +161,7 @@ function Portfolio() {
              <button className="project-btn">View Project</button>
           </div>
           <div class="vertical-line"></div>
-          <div style={{display:"flex",flexDirection:"row"}}>
+          <div style={{display:"flex",flexDirection:"row",marginLeft:"13%"}}>
           <div>
           <img src={Spotify} alt="Spotify" className="Spotify" />
           </div>
@@ -141,7 +179,6 @@ function Portfolio() {
           <hr className="hr-line3"></hr> 
 
           {/* Certificate section */}
-
           <div className="participation-container">
           <div className="participation">
             <h3 className="projects-text">Certificates</h3>
@@ -150,21 +187,87 @@ function Portfolio() {
             <button  className="btn2">Explore More &gt;&gt;</button>
           </div>
         </div>
-        <div style={{display:"flex",flexDirection:"row"}}>
-        <div className="circleleft">
-                <h3 style={{color:"#313131",fontSize:25,margin:0,paddingLeft:7}}>&lt;</h3>
+
+          <div className="sliding-effect-container">
+            <div className="carousel-container">
+            <div className="certificate-circleleft">
+            <button style={{color:"#313131",fontSize:25,margin:0,paddingLeft:10,background:"none",border:"none",paddingTop:5,cursor:"pointer"}} onClick={prevSlide}>&lt;</button>
             </div>
-        <div className="certificate-card">
-                   <h3 className="card-text">App <br />project</h3>
-                   <img src={Hackathon} alt="Project" className="innothon-img" />
-                   <p className="para">This is  the certificate for contribute on parking app project</p>
-                   <button className="btn3">View in detail</button>
-                 </div>
-                 <div className="circleright">
-                <h3 style={{color:"#313131",fontSize:25,margin:0,paddingLeft:7}}>&gt;</h3>
+                <div className="carousel">
+                    {certificates.map((certificate, index) => (
+                        <div
+                            key={certificate.id}
+                            className={`certificate-card ${index === activeIndex ? "active" : index === (activeIndex - 1 + certificates.length) % certificates.length ? "left" : index === (activeIndex + 1) % certificates.length ? "right" : "hidden"}`}
+                        >
+                            <h3 className="card-text">{certificate.title}</h3>
+                            <img
+                                src={certificate.image}
+                                alt={certificate.title}
+                                className="certificate-img"
+                            />
+                            <p className="para">{certificate.description}</p>
+                        </div>
+                    ))}
+                </div>
+                <div className="certificate-circleright">
+                <button style={{color:"#313131",fontSize:25,margin:0,paddingLeft:10,background:"none",border:"none",paddingTop:5,cursor:"pointer"}} onClick={nextSlide}>&gt;</button>
             </div>
             </div>
-     </div>
+            <div className="pagination">
+                {certificates.map((_, index) => (
+                    <span
+                        key={index}
+                        className={`dot ${index === activeIndex ? "active" : ""}`}
+                        onClick={() => setActiveIndex(index)}
+                    ></span>
+                ))}
+            </div>
+        </div>
+        <hr></hr>
+
+        {/* Connect */}
+
+        <div className="connect-container">
+      <div className="form-box">
+        <h2 className="heading">
+          Let`s Connect
+        </h2>
+
+        <label className="label">Email</label>
+        <input type="email" placeholder="Enter your email" className="input" />
+
+        <label className="label">Mobile No</label>
+        <input type="tel" placeholder="Enter your mobile no" className="input" />
+        <br />
+        <button className="button">Get in touch</button>
+      </div>
+    </div>
+    <footer className="footer">
+      <div style={{display:"flex",flexDirection:"row"}}> 
+      <div className="footer-content">
+       <h3 className="Social">Social Links</h3>
+       <h5 className="contents">Instagram</h5>
+       <h5 className="contents">Facebook</h5>
+       <h5 className="contents">Github</h5>
+       <h5 className="contents">Linkedin</h5>
+       </div>
+       <div className="page-content">
+       <h3 className="Social">Page Links</h3>
+        </div>
+        <div className="contact-content">
+       <h3 className="Social">Contacts</h3>
+       <div style={{display:"flex",flexDirection:"row"}}> 
+       <img src={iconphone} alt="Phone Icon" className="phoneicon" />
+       <h5>9159873818</h5>
+       </div>
+       <div style={{display:"flex",flexDirection:"row"}}> 
+       <img src={iconmail} alt="Email Icon" className="phoneicon" />
+       <h5>Kailasam5107@gmail.com</h5>
+       </div>
+        </div>
+        </div>
+      </footer>
+    </div> 
   );
 }
 export default Portfolio;
