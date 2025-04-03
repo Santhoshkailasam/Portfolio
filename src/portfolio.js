@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfolio.css";
-import { useState } from "react";
+import { useState,useRef } from "react";
 import github from "./asserts/github.png";
 import linkedin from "./asserts/Linkedin.png";
 import phone from "./asserts/Phone.png";
@@ -15,13 +15,14 @@ import Certificate from "./asserts/certificates.jpg";
 import Reactjs from "./asserts/react.png";
 import iconphone from "./asserts/phone-icon.png";
 import iconmail from "./asserts/email-icon.png";
+import Internship from "./asserts/internship.jpg";
 function Portfolio() {
   // certificate
 
    const certificates = [
           {
               id: 1,
-              title: "App Project",
+              title: "Reactjs",
               description: "This is a completion certificate of React JS received from the Infosys.",
               image: Reactjs,
           },
@@ -33,9 +34,9 @@ function Portfolio() {
           },
           {
               id: 3,
-              title: "KCG Innothon",
+              title: "Internship Certificate",
               description: "This is a certificate of contribution received from the Innothon project.",
-              image: Innothon,
+              image: Internship,
           },
       ];
   
@@ -49,6 +50,25 @@ function Portfolio() {
           setActiveIndex((prev) => (prev === certificates.length - 1 ? 0 : prev + 1));
       };
 
+      // useref
+
+      const participateRef = useRef(null);
+      const projectRef = useRef(null);
+      const certificatRef = useRef(null);
+      const getintouchRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    setTimeout(() => {
+      const yOffset = -80; 
+      window.scrollTo({
+        top: ref.current.getBoundingClientRect().top + window.scrollY + yOffset,
+        behavior: "smooth",
+      });
+    }); 
+    }
+  };
   return (
     <div>
         {/* Navbar */}
@@ -58,16 +78,16 @@ function Portfolio() {
        </div>
        <div className="navbar">
         <div >
-            <h3>Participations</h3>
+            <h3 onClick={() => scrollToSection(participateRef)} style={{cursor:"pointer"}}>Participations</h3>
         </div>
         <div>
-        <h3>Projects</h3>
+        <h3 onClick={() => scrollToSection(projectRef)} style={{cursor:"pointer"}}>Projects</h3>
         </div>
         <div>
-            <h3>Certificates</h3>
+            <h3 onClick={() => scrollToSection(certificatRef)} style={{cursor:"pointer"}}>Certificates</h3>
         </div>
         <div>
-            <button  className="btn">Get in Touch</button>
+            <button  className="btn" onClick={() => scrollToSection(getintouchRef)} style={{cursor:"pointer"}}>Get in Touch</button>
         </div>
         </div>
     </div>
@@ -91,23 +111,33 @@ function Portfolio() {
      </div>
      <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between",width:"60%"}}>
         <div>
-            <button  className="resume-btn">Download Resume</button>
+
+            <a href="https://drive.google.com/uc?export=download&id=11mC4qp1Ry2hXYtrZxIjKprEa_cmkWgXA" download > <button  className="resume-btn">Download Resume</button></a>
         </div>
      <div className="icons-container">
-           <img src={github} alt="GitHub Icon" className="icon" />
-           <img src={linkedin} alt="LinkedIn Icon" className="icon" />
+      {/* Github */}
+          <a href="https://github.com/Santhoshkailasam" 
+           target="_blank" 
+           rel="noopener noreferrer"> <img src={github} alt="GitHub Icon" className="icon" /></a>
+           {/* Linkedin */}
+          <a href="https://www.linkedin.com/in/kailasam-n-8975b3327/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+           target="_blank" 
+           rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn Icon" className="icon" /></a>
            <img src={phone} alt="Phone Icon" className="icon" />
-           <img src={email} alt="Email Icon" className="icon" />
+           {/* Email */}
+
+          <a href="mailto:Kailasam5107@gmail.com?subject=Hello&body=I want to connect with you!" > <img src={email} alt="Email Icon" className="icon" /></a>  
      </div>
      </div>
      <hr></hr>
-     {/* Participation container */}
+     {/* Participation  */}
+     <section ref={participateRef}>
        <div className="participation-container">
           <div className="participation">
             <h3 className="participation-text">Participations</h3>
           </div> 
           <div>
-            <button  className="btn2">Explore More &g t;&gt;</button>
+            <button  className="btn2">Explore More &gt;&gt;</button>
           </div>
         </div>
         <div className="participation-card-container">
@@ -138,6 +168,7 @@ function Portfolio() {
                 <button style={{color:"#313131",fontSize:25,margin:0,paddingLeft:10,background:"none",border:"none",paddingTop:5,cursor:"pointer"}}>&gt;</button>
             </div>
         </div>
+        </section>
        <hr></hr>  
 
        {/* Projects */}
@@ -152,7 +183,7 @@ function Portfolio() {
         </div>
 
         {/* Project Card */}
-
+         <section ref={projectRef}>
           <div className="projectcard-container">
              <h3 className="title">Title</h3>
              <p className="title-text">A visually appealing Spotify <br/>clone built using React 
@@ -176,9 +207,11 @@ function Portfolio() {
           </div>
           <div class="vertical-line2"></div>
           <img src={Parking} alt="Spotify" className="Parking" />
+          </section>
           <hr className="hr-line3"></hr> 
 
           {/* Certificate section */}
+          <section ref={certificatRef}>
           <div className="participation-container">
           <div className="participation">
             <h3 className="projects-text">Certificates</h3>
@@ -223,37 +256,50 @@ function Portfolio() {
                 ))}
             </div>
         </div>
+        </section>
         <hr></hr>
 
         {/* Connect */}
-
-        <div className="connect-container">
-      <div className="form-box">
-        <h2 className="heading">
-          Let`s Connect
-        </h2>
+        <section ref={getintouchRef}>
+         <div className="connect-container">
+              <div className="form-box">
+                 <h2 className="heading">
+                 Let`s Connect
+                   </h2>
 
         <label className="label">Email</label>
         <input type="email" placeholder="Enter your email" className="input" />
 
-        <label className="label">Mobile No</label>
-        <input type="tel" placeholder="Enter your mobile no" className="input" />
+        <label className="label">Message</label>
+        <textarea type="text" placeholder="Enter Message" className="input-message" />
         <br />
         <button className="button">Get in touch</button>
       </div>
     </div>
+ </section>
+
+    {/* Footer */}
     <footer className="footer">
-      <div style={{display:"flex",flexDirection:"row"}}> 
+      <div style={{display:"flex",flexDirection:"row",justifyContent:"center"}}> 
       <div className="footer-content">
        <h3 className="Social">Social Links</h3>
-       <h5 className="contents">Instagram</h5>
-       <h5 className="contents">Facebook</h5>
-       <h5 className="contents">Github</h5>
-       <h5 className="contents">Linkedin</h5>
+       {/* Instagram */}
+       <a href="https://www.instagram.com/kailash__4559?igsh=dzBzaHE2ZTVldzQ3"
+        target="_blank" 
+        rel="noopener noreferrer"><h5 className="contents">Instagram</h5></a>
+        {/* facebook */}
+       <a href="https://www.facebook.com/santhosh.kailasam.77"
+        target="_blank" 
+        rel="noopener noreferrer"><h5 className="contents">Facebook</h5></a>
+        {/* github */}
+       <a href="https://github.com/Santhoshkailasam"
+        target="_blank" 
+        rel="noopener noreferrer"><h5 className="contents">Github</h5></a>
+        {/* Linkedin */}
+       <a href="https://www.linkedin.com/in/kailasam-n-8975b3327/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank" 
+        rel="noopener noreferrer"> <h5 className="contents">Linkedin</h5></a>
        </div>
-       <div className="page-content">
-       <h3 className="Social">Page Links</h3>
-        </div>
         <div className="contact-content">
        <h3 className="Social">Contacts</h3>
        <div style={{display:"flex",flexDirection:"row"}}> 
