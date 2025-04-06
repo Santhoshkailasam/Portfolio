@@ -1,0 +1,32 @@
+.footer{
+    background-color: #2A2A2A;
+    height:250px;
+    margin-top: 50px;
+  }
+  .Social{
+    color: #FFF;
+  }
+  .contents{
+    color: #FFF;
+    margin-left: 20px;
+  }
+  .footer-content{
+    padding-top: 20px;
+  }
+  .contact-content{
+    margin-top: 25px;
+    margin-left: 200px;
+    color: #FFF;
+  }
+  .phoneicon{
+    height:20px;
+    width:20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    color:white;
+  }
+  a {
+    color: #FFF; /* Purple shade */
+    text-decoration: none; /* Optional: removes underline */
+    cursor: pointer;
+  }
