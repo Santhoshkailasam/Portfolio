@@ -1,0 +1,50 @@
+.intern-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:50px;
+}
+.intern-img{
+    width:250px;
+    height:320px;
+}
+.internship-certificate-container{
+    margin-top: 10%;
+}
+.Overview{
+    margin-left:100px;
+    color: #FFF;
+    margin-top: 5%;
+}
+.Intern-Describe{
+    color: #FFF;
+    width:750px;
+    margin-left: 15%;
+}
+.internship-list{
+    color: #FFF;
+    margin-left: 30%;
+}
+.internship-list2{
+    color: #FFF;
+    margin-left: 15%;
+}
+.Intern-Describe2{
+    color: #FFF;
+    width:750px;
+    margin-left: 5%;
+}
+.internship-certificate-image{
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #BFBFBF;
+    background: var(--secondary-color, #313131);
+    width: 320px;
+    height: 404px;
+    align-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-shrink: 0;
+    margin-left: 35%;
+}

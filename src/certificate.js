@@ -5,6 +5,7 @@ import webquest from "./asserts/certificates.jpg";
 import Internship from "./asserts/internship.jpg";
 import Footer from "./components/footer";
 import "./certificate.css";
+import { useNavigate } from "react-router-dom";
 function Certificate() {
     const certificates = [
         {
@@ -26,7 +27,17 @@ function Certificate() {
             image: Internship,
         },
     ];
-
+    // Navigation
+    const navigate = useNavigate();
+    const handleNavigation = (id) => {
+      if(id===1){
+         navigate("/react");
+      }else if(id===2){
+        navigate("/webquest");
+      }else if(id===3){         
+        navigate("/internship");
+     }
+ }
     return(
         <div>
             <HeaderComponent text="Certificates" />
@@ -35,7 +46,7 @@ function Certificate() {
                     {certificates.map((certificates) => (
                         <div
                             key={certificates.id}
-                            className="cert-card" 
+                            className="cert-card"  onClick={() => handleNavigation(certificates.id)}
                         >
                             <h3 className="card-text">{certificates.title}</h3>
                             <img

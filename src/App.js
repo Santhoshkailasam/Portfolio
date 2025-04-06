@@ -10,6 +10,9 @@ import SpotifyProject from "./spotify-project";
 import ParkingappProject from "./Parkingproject";
 import ScrollToTop from "./scrolltotop";
 import Certificate from "./certificate";
+import ReactCompletion from "./Reactcompletion";
+import WebquestCertificate from "./Webquestcerttificate";
+import InternshipCertificate from "./internshipcertificate";
 function App() {
   
   return (
@@ -25,6 +28,9 @@ function App() {
       <Route path="/spotifyproject" element={<SpotifyProject />} />
       <Route path="/parkingproject" element={<ParkingappProject />} />
       <Route path="/Certificate" element={<Certificate />} />
+      <Route path="/react" element={<ReactCompletion />} />
+      <Route path="/webquest" element={<WebquestCertificate />} />
+      <Route path="/internship" element={<InternshipCertificate />} />
     </Routes>
   </Router>
   );

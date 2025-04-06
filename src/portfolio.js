@@ -47,6 +47,17 @@ function Portfolio() {
   const Certificates=()=>{
     navigate("/Certificate");
   }
+
+  const handlenavigation=(id)=>{
+    if (id===1){
+      navigate("/react");
+    }else if (id===2){
+      navigate("/webquest");
+    } else if (id===3){
+      navigate("/internship");
+    }
+  }
+  
   // details
     const [formData, setFormData] = useState({
       name: "",
@@ -291,9 +302,10 @@ function Portfolio() {
                 <div className="carousel">
                     {certificates.map((certificate, index) => (
                         <div
+                            onClick={() => handlenavigation(certificate.id)}
                             key={certificate.id}
                             className={`certificate-card ${index === activeIndex ? "active" : index === (activeIndex - 1 + certificates.length) % certificates.length ? "left" : index === (activeIndex + 1) % certificates.length ? "right" : "hidden"}`}
-                        >
+>
                             <h3 className="card-text">{certificate.title}</h3>
                             <img
                                 src={certificate.image}
