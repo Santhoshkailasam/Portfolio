@@ -31,11 +31,12 @@ body{
     border: none;
     color: #5c5555;
     align-self: center;
-    margin-left: 30px;
+    margin-left: 7px;
+    margin-top: 6px;
     font-size: 20px;
     cursor: pointer;
 }
-.participation-container{
+.participations-container{
    display: flex;
    flex-direction: row;
    margin-top: 150px;
@@ -46,7 +47,7 @@ body{
 .participation-card {
     background-color: #1c1c1c;
     width: 258px;
-    height: 320px;
+    height: 340px;
     text-align: center;
     border:1px solid #6b6262;
     border-radius: 10px;
@@ -55,7 +56,7 @@ body{
     width: 200px;
     height: 150px;
     border-radius: 5px;
-    margin-top: 30px;   
+    margin-top: 10px;   
   }
   .para {
     color: #B4B4B4;
@@ -63,4 +64,30 @@ body{
     margin-top: 10px;
     margin-left: 10px;
   }
-  
+  .View-btn{
+  background-color:#313131;
+  color:#B4B4B4;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.3s;
+  margin-top: 10px;
+  }
+  .View-btn:hover{
+    box-shadow: 0 0 10px #B4B4B4;
+  }
+  .back-icon-circle{
+    border: 1px solid #5c5555;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .back-icon-circle:hover{
+    box-shadow: 0 0 10px #5c5555;
+  }

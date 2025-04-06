@@ -1,9 +1,11 @@
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #000;
   margin-bottom:0%;
+  margin-top: 0%;
 }
 .navbarbox {
   display: flex;
@@ -163,6 +165,9 @@ hr {
   margin-top: 100px;
   cursor: pointer;
 }
+.circleleft:hover{
+  box-shadow: 0 0 10px #313131;
+}
 .card{
   border: 1px solid #313131;
   height: 270px;
@@ -190,6 +195,9 @@ hr {
   margin-top: 100px;
   margin-left: 50px;
   cursor: pointer;
+}
+.circleright:hover{
+  box-shadow: 0 0 10px #313131;
 }
 .card-text{
   color: #FFF;
@@ -219,8 +227,7 @@ hr {
   transition: 0.3s;
 }
 .btn3:hover {
-  background-color: #7a1fd1;
-  box-shadow: 0 0 10px #8a2be2;
+  box-shadow: 0 0 10px #B4B4B4;
 }
 .project-title{
   color: #FFF;
@@ -238,9 +245,10 @@ hr {
 }
 .title{
   color: #FFF;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
+  padding-top: 10px;
 }
 .projectcard-container{
   box-shadow: 0px 4px 11px 4px white;
@@ -262,6 +270,9 @@ hr {
   font-weight: bold;
   cursor: pointer;
   margin-left: 30px;
+}
+.project-btn:hover {
+  box-shadow: 0 0 10px #B4B4B4;
 }
 .vertical-line {
   width: 2px; /* Adjust thickness */
@@ -287,11 +298,12 @@ hr {
 }
 .title2{
   color: #FFF;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   margin:0px;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 .vertical-line2{
   width: 2px; 
@@ -433,6 +445,12 @@ margin-top: 50px;
   margin-top: 100px;
   cursor: pointer;
   margin-right: 70px;
+}
+.certificate-circleleft:hover{
+  box-shadow: 0 0 10px #9B30FF;
+}
+.certificate-circleright:hover{
+  box-shadow: 0 0 10px #9B30FF;
 }
 .certificate-circleright{
   width: 35px; /* Adjust size as needed */

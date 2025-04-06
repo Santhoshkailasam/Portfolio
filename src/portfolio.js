@@ -17,7 +17,24 @@ import iconphone from "./asserts/phone-icon.png";
 import iconmail from "./asserts/email-icon.png";
 import Internship from "./asserts/internship.jpg";
 import emailjs from "emailjs-com";
+import { useNavigate } from "react-router-dom";
+
 function Portfolio() {
+  // Navigation
+  const navigate = useNavigate();
+
+  const handleExplore = () => {
+    navigate("/participation");
+  };
+  const Kcginnothon=()=>{
+    navigate("/kcginnothon");
+  }
+  const Kcgwebquest=()=>{
+    navigate("/kcgwebquest");
+  }
+  const Kcghackathon=()=>{
+    navigate("/kcghackathon");
+  }
   // details
     const [formData, setFormData] = useState({
       name: "",
@@ -161,6 +178,8 @@ function Portfolio() {
      </div>
      </div>
      <hr></hr>
+
+
      {/* Participation  */}
      <section ref={participateRef}>
        <div className="participation-container">
@@ -168,7 +187,7 @@ function Portfolio() {
             <h3 className="participation-text">Participations</h3>
           </div> 
           <div>
-            <button  className="btn2">Explore More &gt;&gt;</button>
+            <button  className="btn2" onClick={handleExplore}>Explore More &gt;&gt;</button>
           </div>
         </div>
         <div className="participation-card-container">
@@ -180,19 +199,19 @@ function Portfolio() {
                    <h3 className="card-text">KCG <br /> Innothon</h3>
                    <img src={Innothon} alt="KCG Innothon" className="innothon-img" />
                    <p className="para">I have participated in KCG Innothon which Gives<br/>me a lot of experience</p>
-                   <button className="btn3">View in detail</button>
+                   <button className="btn3" onClick={Kcginnothon}>View in detail</button>
                  </div>
                  <div className="card">
                    <h3 className="card-text">KCG <br /> Webquest</h3>
                    <img src={Webquest} alt="KCG Webquest" className="innothon-img" />
                    <p className="para">I have participated in KCG Webquest which Gives<br/>me a lot of experience</p>
-                   <button className="btn3">View in detail</button>
+                   <button className="btn3" onClick={Kcgwebquest}>View in detail</button>
                  </div>
                  <div className="card">
                    <h3 className="card-text">KCG <br /> Hackathon</h3>
                    <img src={Hackathon} alt="KCG Hackathon" className="innothon-img" />
                    <p className="para">I have participated in KCG Hackathon which Gives<br/>me a lot of experience</p>
-                   <button className="btn3">View in detail</button>
+                   <button className="btn3" onClick={Kcghackathon}>View in detail</button>
                  </div>
                 </div>
                 <div className="circleright">
@@ -216,7 +235,7 @@ function Portfolio() {
         {/* Project Card */}
          <section ref={projectRef}>
           <div className="projectcard-container">
-             <h3 className="title">Title</h3>
+             <h3 className="title">Spotify Clone</h3>
              <p className="title-text">A visually appealing Spotify <br/>clone built using React 
              <br/>Native, featuring a seamless user interface and smooth navigation. A perfect project 
              to showcase front-end development skills using <br />React Native."</p>
@@ -229,7 +248,7 @@ function Portfolio() {
           </div>
           <hr className="hr-line"/>
           <div className="projectcard-container2">
-             <h3 className="title2">Title</h3>
+             <h3 className="title2">Parking App</h3>
              <p className="title-text">Parking App is a user-friendly React Native frontend 
               that simplifies the parking experience.It features a <br />home screen displaying nearby
                parking spots, a booking system for reserving spaces.</p>

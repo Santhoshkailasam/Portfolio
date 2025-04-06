@@ -1,0 +1,23 @@
+.Innothon-img{
+    width: 500px;
+    height: 304px;
+    margin-top: 100px;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.subheading{
+    color:#FFF;
+    margin-left: 100PX;
+}
+
+.project-text{
+    width:800px;
+    margin-left: 200PX;
+    color:#FFF;
+}
+.About-container{
+    margin-top: 60px;
+}
