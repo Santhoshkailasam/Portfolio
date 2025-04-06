@@ -1,0 +1,63 @@
+.spotifyimg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.Spotify-img{
+    width:500px;
+    height: 300px;
+}
+.descripe-container{
+    margin-left: 170px;
+}
+h4{
+    color: #FFF;
+}
+.Spotifydescription{
+    color:#FFF;
+    width:800px;
+    margin-left: 30px;
+}
+.tech-stack-list{
+    color: #FFF ;
+}
+li{
+    margin-bottom: 10px;
+}
+.login-img{
+    width:200px;
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 200px;
+    box-shadow: 0 0 10px #FFF;
+}
+.login-container{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.image-describe{
+    color: #FFF;
+    width: 500px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.git-btn{
+    background-color: #9B30FF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 200px;
+    height: 50px;
+  }
+  .git-btn:hover {
+    background-color: #7a1fd1;
+    box-shadow: 0 0 10px #8a2be2;
+  }

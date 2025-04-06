@@ -261,7 +261,7 @@ hr {
   font-size: 10px;
   margin-left: 14px;
 }
-.project-btn{
+.spotify-project-btn{
   background-color:#313131;
   color:#B4B4B4;
   padding: 5px;
@@ -271,9 +271,10 @@ hr {
   cursor: pointer;
   margin-left: 30px;
 }
-.project-btn:hover {
+.spotify-project-btn:hover {
   box-shadow: 0 0 10px #B4B4B4;
 }
+
 .vertical-line {
   width: 2px; /* Adjust thickness */
   height: 140px; /* Adjust height */
@@ -400,11 +401,16 @@ margin-top: 50px;
   height: 150px;
   border-radius: 10px;
 }
+.larg-img{
+  height:160px;
+  width: 130px;
+}
 
 .para {
   color: #B4B4B4;
   font-size: 14px;
   margin-top: 10px;
+  text-align: left;
 }
 .pagination {
   display: flex;

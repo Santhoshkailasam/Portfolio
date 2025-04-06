@@ -1,0 +1,21 @@
+.cert-card{
+    background-color: #1c1c1c;
+     width: 258px;
+     height: 320px;
+     text-align: center;
+     border:1px solid #6b6262;
+     border-radius: 10px;
+     box-shadow: 0 0 10px #FFF;
+}
+.large-img {
+    height:160px;
+    width: 160px;
+  }
+.cert-description{
+    color: #B4B4B4;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 220px;
+    text-align: left;
+}

@@ -7,9 +7,14 @@ import Kcgwebquest from "./KCG-webquest";
 import Kcghackathon from "./kcg-hackathon";
 import Project from "./Project";
 import SpotifyProject from "./spotify-project";
+import ParkingappProject from "./Parkingproject";
+import ScrollToTop from "./scrolltotop";
+import Certificate from "./certificate";
 function App() {
+  
   return (
     <Router>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Portfolio />} />
       <Route path="/participation" element={<Participation />} />
@@ -18,6 +23,8 @@ function App() {
       <Route path="/kcghackathon" element={<Kcghackathon />} />
       <Route path="/project" element={<Project/>} />
       <Route path="/spotifyproject" element={<SpotifyProject />} />
+      <Route path="/parkingproject" element={<ParkingappProject />} />
+      <Route path="/Certificate" element={<Certificate />} />
     </Routes>
   </Router>
   );

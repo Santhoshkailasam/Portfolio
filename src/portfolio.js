@@ -38,6 +38,15 @@ function Portfolio() {
   const Project=()=>{
     navigate("/project");
   }
+  const Spotifyproject=()=>{
+    navigate("/spotifyproject");
+  }
+  const Parkingproject=()=>{
+    navigate("/parkingproject");
+  }
+  const Certificates=()=>{
+    navigate("/Certificate");
+  }
   // details
     const [formData, setFormData] = useState({
       name: "",
@@ -242,7 +251,7 @@ function Portfolio() {
              <p className="title-text">A visually appealing Spotify <br/>clone built using React 
              <br/>Native, featuring a seamless user interface and smooth navigation. A perfect project 
              to showcase front-end development skills using <br />React Native."</p>
-             <button className="project-btn">View Project</button>
+             <button className="spotify-project-btn" onClick={Spotifyproject}>View Project</button>
           </div>
           <div class="vertical-line"></div>
           <div className="project-box" >
@@ -255,7 +264,7 @@ function Portfolio() {
              <p className="title-text">Parking App is a user-friendly React Native frontend 
               that simplifies the parking experience.It features a <br />home screen displaying nearby
                parking spots, a booking system for reserving spaces.</p>
-             <button className="project-btn">View Project</button>
+             <button className="spotify-project-btn" onClick={Parkingproject}>View Project</button>
           </div>
           </div>
           <div class="vertical-line2"></div>
@@ -270,7 +279,7 @@ function Portfolio() {
             <h3 className="projects-text">Certificates</h3>
           </div> 
           <div>
-            <button  className="btn2">Explore More &gt;&gt;</button>
+            <button  className="btn2" onClick={Certificates}>Explore More &gt;&gt;</button>
           </div>
         </div>
 
@@ -289,7 +298,7 @@ function Portfolio() {
                             <img
                                 src={certificate.image}
                                 alt={certificate.title}
-                                className="certificate-img"
+                                className={certificate.id === 3 ? "certificate-img larg-img" : "certificate-img"}
                             />
                             <p className="para">{certificate.description}</p>
                         </div>
