@@ -1,0 +1,39 @@
+.project-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    justify-content: center;
+    gap: 100px; 
+    
+ }
+ .project-card {
+     background-color: #1c1c1c;
+     width: 288px;
+     height: 390px;
+     text-align: center;
+     border:1px solid #6b6262;
+     border-radius: 10px;
+     box-shadow: 0 0 10px #FFF;
+   }
+   .description{
+    color: #B4B4B4;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 230px;
+    text-align: left;
+   }
+   .Project-btn{
+    background-color:#313131;
+    color:#B4B4B4;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+  }
+  .Project-btn:hover{
+    box-shadow: 0 0 10px #B4B4B4;
+  }

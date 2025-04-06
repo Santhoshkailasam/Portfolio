@@ -5,6 +5,8 @@ import Participation from "./participation";
 import KcgInnothon from "./kcg-Innothon";
 import Kcgwebquest from "./KCG-webquest";
 import Kcghackathon from "./kcg-hackathon";
+import Project from "./Project";
+import SpotifyProject from "./spotify-project";
 function App() {
   return (
     <Router>
@@ -14,6 +16,8 @@ function App() {
       <Route path="/kcginnothon" element={<KcgInnothon />} />
       <Route path="/kcgwebquest" element={<Kcgwebquest />} />
       <Route path="/kcghackathon" element={<Kcghackathon />} />
+      <Route path="/project" element={<Project/>} />
+      <Route path="/spotifyproject" element={<SpotifyProject />} />
     </Routes>
   </Router>
   );

@@ -35,6 +35,9 @@ function Portfolio() {
   const Kcghackathon=()=>{
     navigate("/kcghackathon");
   }
+  const Project=()=>{
+    navigate("/project");
+  }
   // details
     const [formData, setFormData] = useState({
       name: "",
@@ -228,7 +231,7 @@ function Portfolio() {
             <h3 className="project-title" >Projects</h3>
           </div> 
           <div>
-            <button  className="btn2">Explore More &gt;&gt;</button>
+            <button  className="btn2" onClick={Project }>Explore More &gt;&gt;</button>
           </div>
         </div>
 
