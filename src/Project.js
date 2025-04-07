@@ -3,6 +3,7 @@ import HeaderComponent from "./components/headercomponent";
 import Spotify from "./asserts/spotifytemplate.png";
 import Parking from "./asserts/parking.png";
 import { useNavigate } from "react-router-dom";
+import Footer from "./components/footer"
 import "./project.css";
 
 function Project() {
@@ -53,6 +54,7 @@ function Project() {
                         </div>
                     ))}
                 </div>
+                <Footer />
         </div>
     )
 }
