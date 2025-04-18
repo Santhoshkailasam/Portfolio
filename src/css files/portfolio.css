@@ -699,7 +699,7 @@ textarea{
     margin-top: 20px;
     cursor: pointer;
     transition: 0.3s;
-    margin-left: 129px;
+    margin-left: 120px;
   }
   .explore-btn:hover {
     background-color: #7a1fd1;
@@ -709,7 +709,10 @@ textarea{
     height:60px;
     width:100px;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 45px;
+  }
+  .btn3{
+    margin-left: 45px;
   }
   .para{
     color: #B4B4B4;
@@ -731,7 +734,7 @@ textarea{
   .Spotify{
     height:150px;
     width:200px;
-    margin-left: 70PX;
+    margin-left: 75PX;
   }
   .project-box{
     flex-direction:column;
@@ -922,7 +925,7 @@ textarea{
 }
 
 /* Desktop view */
-@media (max-width:1500px) and (min-width:480px){
+@media (max-width:1500px) and ( min-width:1300px){
  .resume-btn{
   margin-left: 300px;
  } 
