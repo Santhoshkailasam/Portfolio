@@ -88,6 +88,29 @@ function Portfolio() {
       });
     };
   
+
+
+    // For Swipe
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+  
+    const handleTouchStart = (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    };
+  
+    const handleTouchMove = (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+    };
+  
+    const handleTouchEnd = () => {
+      if (touchStartX - touchEndX > 50) {
+        nextSlide(); // Swipe left
+      } else if (touchEndX - touchStartX > 50) {
+        prevSlide(); // Swipe right
+      }
+    };
+  
   // certificate
 
    const certificates = [
@@ -297,7 +320,10 @@ function Portfolio() {
           </div>
         </div>
 
-          <div className="sliding-effect-container">
+          <div className="sliding-effect-container"
+           onTouchStart={handleTouchStart}
+           onTouchMove={handleTouchMove}
+           onTouchEnd={handleTouchEnd}>
             <div className="carousel-container">
             <div className="certificate-circleleft">
             <button className="participation-btn" onClick={prevSlide}>&lt;</button>
