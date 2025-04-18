@@ -779,7 +779,7 @@ margin-top: 40px;
     justify-content: flex-start;
   }
   .name{
-    margin-left: 30px;
+    margin-left: 20px;
     margin-top: 25px;
     font-weight: bold;
     font-size: 16px;
@@ -797,7 +797,7 @@ margin-top: 40px;
     transition: 0.3s;
     height:30px;
     align-items: center;
-    margin-left: 90px;
+    margin-left: 110px;
     margin-top:20px;
   }
  #download-btn:hover{
