@@ -922,7 +922,7 @@ textarea{
 }
 
 /* Desktop view */
-@media (max-width:1500px and min-width:480px){
+@media (max-width:1500px) and (min-width:480px){
  .resume-btn{
   margin-left: 300px;
  } 
