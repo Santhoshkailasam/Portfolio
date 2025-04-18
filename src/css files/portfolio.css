@@ -133,6 +133,9 @@ hr {
   color: #FFF;
   margin-left:570px;
 }
+.explore-btn{
+  display: none;
+}
 .participation-btn{
   color:#313131;
   font-size: 25px;
@@ -176,6 +179,9 @@ hr {
   height: 270px;
   width: 190px;
   border-radius: 20px;
+}
+.card:hover{
+  box-shadow: 0px 0px 20px #9B30FF;
 }
 .card-container{
   display: flex;
@@ -582,43 +588,6 @@ textarea{
   font-weight: bold; /* Make placeholder text bold */
   color: #686767; /* Change placeholder color */
 }
-.footer{
-  background-color: #2A2A2A;
-  height:250px;
-}
-.Social{
-  color: #FFF;
-}
-.contents{
-  color: #FFF;
-  margin-left: 20px;
-}
-.footer-content{
-  padding-top: 20px;
-}
-.contact-content{
-  margin-top: 20px;
-  margin-left: 200px;
-  color: #FFF;
-}
-.phoneicon{
-  height:20px;
-  width:20px;
-  margin-top: 20px;
-  margin-right: 10px;
-  color:white;
-}
-a {
-  color: #FFF; /* Purple shade */
-  text-decoration: none; /* Optional: removes underline */
-}
-
-
-
-
-
-
-
 
 /* Responssive Design*/
 @media (max-width: 1024px) and (min-width: 768px){
@@ -800,30 +769,7 @@ margin-top: 40px;
 .pagination {
   margin-top: 0px;
 }
-.connect-container {
-  height: 90vh;
-}
-/* Form Box */
-.form-box {
-  width: 360px;
-  height:500px;
-}
 
-
-/* Labels */
-.label {
-  margin-top: 20px;
-}
-
-/* Input Fields */
-.input {
-  width:240px;
-  height: 30px;
-}
-.input-message{
-  height: 60px;
-  width:240px;
-}
 }
 
 @media (max-width: 440px) {
@@ -910,7 +856,7 @@ margin-top: 40px;
   .circleright{
     display: none;
   }
-  #explore-btn{
+  .explore-btn{
     background-color: #9B30FF;
     color: white;
     padding: 10px;
@@ -922,7 +868,7 @@ margin-top: 40px;
     transition: 0.3s;
     margin-left: 129px;
   }
-  #explore-btn:hover {
+  .explore-btn:hover {
     background-color: #7a1fd1;
     box-shadow: 0 0 10px #8a2be2;
   }
@@ -995,10 +941,57 @@ margin-top: 40px;
     height:150px;
     width:200px;
     margin-right: 75px;
+    margin-bottom: 30px;
   }
  .hr-line3{
   width: 290px;
   margin-left: 40px;
+  margin-top: 60px;
  }
- 
+ .projects-text{
+  margin-left: 120px;
+ }
+.connect-container {
+  height: 70vh;
+}
+.form-box {
+  width: 240px;
+  height:450px;
+}
+
+.heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.label {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* Input Fields */
+.input {
+  width:200px;
+  height: 20px;
+  background-color: #111;
+  border-radius: 5px;
+}
+.input-message{
+  width:200px;
+  height: 90px;
+  border-radius: 5px;
+}
+textarea{
+  font-size: 14px;
+}
+
+.input::placeholder {
+  font-size: 14px;  
+  
+}
+.input-message::placeholder {
+  font-size: 14px;  
+}
+
 }

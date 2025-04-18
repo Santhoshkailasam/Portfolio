@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div>
         <footer className="footer">
-        <div  style={{display:"flex",flexDirection:"row",justifyContent:"center"}}> 
+        <div class="footer-box"> 
         <div className="footer-content">
          <h3 className="Social">Social Links</h3>
          {/* Instagram */}

@@ -3,6 +3,11 @@
     height:250px;
     margin-top: 50px;
   }
+  .footer-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .Social{
     color: #FFF;
   }
@@ -29,4 +34,67 @@
     color: #FFF; /* Purple shade */
     text-decoration: none; /* Optional: removes underline */
     cursor: pointer;
+  }
+/* Responsive Design */
+  @media (max-width: 1024px) and (min-width: 768px){
+    .connect-container {
+      height: 90vh;
+    }
+    /* Form Box */
+    .form-box {
+      width: 360px;
+      height:500px;
+    }
+    
+    
+    /* Labels */
+    .label {
+      margin-top: 20px;
+    }
+    
+    /* Input Fields */
+    .input {
+      width:240px;
+      height: 30px;
+    }
+    .input-message{
+      height: 60px;
+      width:240px;
+    }
+  }
+  @media (max-width: 440px) {
+    .Social{
+      color: #FFF;
+      font-size: 16px;
+      width:100px;
+      margin-left: 10px;
+    }
+    .contents{
+      color: #FFF;
+      margin-left: 20px;
+    }
+    .footer-content{
+      padding-top: 20px;
+      margin-left: 10px;
+    }
+    .footer-box{
+      display: flex;
+      flex-direction:row;
+      justify-content:space-between;
+      width:10px;
+    }
+    .contact-content{
+      margin-left: 50px;
+      
+    }
+    .phoneicon{
+      height:20px;
+      width:20px;
+      margin-top: 20px;
+      margin-right: 10px;
+      color:white;
+    }
+    h5{
+      font-size: 12px;
+    }
   }
