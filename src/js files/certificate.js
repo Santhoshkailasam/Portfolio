@@ -1,10 +1,10 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import Reactjs from "./asserts/react.png";
-import webquest from "./asserts/certificates.jpg";
-import Internship from "./asserts/internship.jpg";
-import Footer from "./components/footer";
-import "./certificate.css";
+import HeaderComponent from "../components/headercomponent";
+import Reactjs from "../js files/asserts/react.png";
+import webquest from "../js files/asserts/certificates.jpg";
+import Internship from "../js files/asserts/internship.jpg";
+import Footer from "../components/footer";
+import "../css files/certificate.css";
 import { useNavigate } from "react-router-dom";
 function Certificate() {
     const certificates = [

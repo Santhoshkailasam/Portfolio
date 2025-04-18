@@ -1,10 +1,10 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import Spotify from "./asserts/spotifytemplate.png";
-import Parking from "./asserts/parking.png";
+import HeaderComponent from "../components/headercomponent";
+import Spotify from "../js files/asserts/spotifytemplate.png";
+import Parking from "../js files/asserts/parking.png";
 import { useNavigate } from "react-router-dom";
-import Footer from "./components/footer"
-import "./project.css";
+import Footer from "../components/footer"
+import "../css files/project.css";
 
 function Project() {
     // navigation

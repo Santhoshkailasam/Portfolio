@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
+import HeaderComponent from "../components/headercomponent";
 import Spotifyimg from "./asserts/spotifytemplate.png";
 import "./spotify.css"
 import Login from "../asserts/login.png";

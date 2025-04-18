@@ -1,8 +1,8 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import reactcertificate from "./asserts/react.png";
-import "./Reactcompletion.css";
-import Footer from "./components/footer";
+import HeaderComponent from "../components/headercomponent";
+import reactcertificate from "../js files/asserts/react.png";
+import "../css files/Reactcompletion.css";
+import Footer from "../components/footer";
 function ReactCompletion() {
   return (
     <div>

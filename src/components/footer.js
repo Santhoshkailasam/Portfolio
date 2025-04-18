@@ -1,6 +1,6 @@
 import React from "react";
-import iconphone from "../asserts/phone-icon.png";
-import iconmail from "../asserts/email-icon.png";
+import iconphone from "../js files/asserts/phone-icon.png";
+import iconmail from "../js files/asserts/email-icon.png";
 import "./footer.css";
 function Footer() {
     return (

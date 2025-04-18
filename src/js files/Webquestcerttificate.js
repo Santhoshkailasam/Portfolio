@@ -1,9 +1,9 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import webquestcertificate from "./asserts/certificates.jpg";
-import Friends from "./asserts/kcg-webquest.jpg";
-import "./webquestcertificates.css";
-import Footer from "./components/footer";
+import HeaderComponent from "../components/headercomponent";
+import webquestcertificate from "../js files/asserts/certificates.jpg";
+import Friends from "../js files/asserts/kcg-webquest.jpg";
+import "../css files/webquestcertificates.css";
+import Footer from "../components/footer";
 function WebquestCertificate() {
   return (
     <div>

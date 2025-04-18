@@ -1,10 +1,10 @@
 import React from "react";
-import "./participation.css";
-import Innothon from "./asserts/Kcg-innothon.jpg";
-import Webquest from "./asserts/kcg-webquest.jpg";
-import Hackathon from "./asserts/kcg-hackathon.jpg";
-import Footer from "./components/footer";
-import HeaderComponent from "./components/headercomponent";
+import "../css files/participation.css";
+import Innothon from "../js files/asserts/Kcg-innothon.jpg";
+import Webquest from "../js files/asserts/kcg-webquest.jpg";
+import Hackathon from "../js files/asserts/kcg-hackathon.jpg";
+import Footer from "../components/footer";
+import HeaderComponent from "../components/headercomponent";
 import { useNavigate } from "react-router-dom";
 const participation = [
     {

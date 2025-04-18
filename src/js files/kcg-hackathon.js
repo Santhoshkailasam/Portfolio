@@ -1,8 +1,8 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import Hackathon from "./asserts/kcg-hackathon.jpg";
-import "./ParticipationDetails.css";
-import Footer from "./components/footer";
+import HeaderComponent from "../components/headercomponent";
+import Hackathon from "../js files/asserts/kcg-hackathon.jpg";
+import "../css files/ParticipationDetails.css";
+import Footer from "../components/footer";
 function Kcghackathon() {
     return (
         <div>

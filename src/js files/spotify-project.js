@@ -1,15 +1,15 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import Spotifyimg from "./asserts/spotifytemplate.png";
-import "./spotify.css"
-import Login from "./asserts/login.jpg";
-import Artists from "./asserts/artists.jpg";
-import Generes from "./asserts/generes.jpg";
-import Podcasts from "./asserts/podcasts.jpg";
-import Home from "./asserts/Home.jpg";
-import Playlist from "./asserts/playlist.jpg";
-import Spotifyprofile from "./asserts/spotifyprofile.jpg";
-import Footer from "./components/footer";
+import HeaderComponent from "../components/headercomponent";
+import Spotifyimg from "../js files/asserts/spotifytemplate.png";
+import "../css files/spotify.css"
+import Login from "../js files/asserts/login.jpg";
+import Artists from "../js files/asserts/artists.jpg";
+import Generes from "../js files/asserts/generes.jpg";
+import Podcasts from "../js files/asserts/podcasts.jpg";
+import Home from "../js files/asserts/Home.jpg";
+import Playlist from "../js files/asserts/playlist.jpg";
+import Spotifyprofile from "../js files/asserts/spotifyprofile.jpg";
+import Footer from "../components/footer";
 function SpotifyProject() {
     return(
         <div>

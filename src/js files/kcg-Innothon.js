@@ -1,8 +1,8 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import Innothon from "./asserts/Kcg-innothon.jpg";
-import "./ParticipationDetails.css";
-import Footer from "./components/footer";
+import HeaderComponent from "../components/headercomponent";
+import Innothon from "../js files/asserts/Kcg-innothon.jpg";
+import "../css files/ParticipationDetails.css";
+import Footer from "../components/footer";
 function Kcginnothon() {
     return (
         <div>

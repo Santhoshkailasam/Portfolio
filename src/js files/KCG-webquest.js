@@ -1,8 +1,8 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import Webquest from "./asserts/kcg-webquest.jpg";
-import "./participation.css";
-import Footer from "./components/footer";
+import HeaderComponent from "../components/headercomponent";
+import Webquest from "../js files/asserts/kcg-webquest.jpg";
+import "../css files/participation.css";
+import Footer from "../components/footer";
 function Kcgwebquest() {
     return (
         <div className="kcgwebquest-container">

@@ -1,8 +1,8 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import Internship from "./asserts/internship.jpg";
-import "./internship.css";
-import Footer from "./components/footer";
+import HeaderComponent from "../components/headercomponent";
+import Internship from "../js files/asserts/internship.jpg";
+import "../css files/internship.css";
+import Footer from "../components/footer";
 function InternshipCertificate() {
     return (
         <div >

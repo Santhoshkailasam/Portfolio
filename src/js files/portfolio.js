@@ -1,21 +1,21 @@
 import React from "react";
-import "./portfolio.css";
+import "../css files/portfolio.css";
 import { useState,useRef } from "react";
-import github from "./asserts/github.png";
-import linkedin from "./asserts/Linkedin.png";
-import phone from "./asserts/Phone.png";
-import email from "./asserts/mail.png";
-import profile from "./asserts/profile.jpg";
-import Innothon from "./asserts/Kcg-innothon.jpg";
-import Webquest from "./asserts/kcg-webquest.jpg";
-import Hackathon from "./asserts/kcg-hackathon.jpg";
-import Spotify from "./asserts/spotifytemplate.png";
-import Parking from "./asserts/parking.png";
-import Certificate from "./asserts/certificates.jpg";
-import Reactjs from "./asserts/react.png";
-import iconphone from "./asserts/phone-icon.png";
-import iconmail from "./asserts/email-icon.png";
-import Internship from "./asserts/internship.jpg";
+import github from "../js files/asserts/github.png";
+import linkedin from "../js files/asserts/Linkedin.png";
+import phone from "../js files/asserts/Phone.png";
+import email from "../js files/asserts/mail.png";
+import profile from "../js files/asserts/profile.jpg";
+import Innothon from "../js files/asserts/Kcg-innothon.jpg";
+import Webquest from "../js files/asserts/kcg-webquest.jpg";
+import Hackathon from "../js files/asserts/kcg-hackathon.jpg";
+import Spotify from "../js files/asserts/spotifytemplate.png";
+import Parking from "../js files/asserts/parking.png";
+import Certificate from "../js files/asserts/certificates.jpg";
+import Reactjs from "../js files/asserts/react.png";
+import iconphone from "../js files/asserts/phone-icon.png";
+import iconmail from "../js files/asserts/email-icon.png";
+import Internship from "../js files/asserts/internship.jpg";
 import emailjs from "emailjs-com";
 import { useNavigate } from "react-router-dom";
 
@@ -196,7 +196,6 @@ function Portfolio() {
           <a href="https://wa.me/9159873818" target="_blank"   rel="noopener noreferrer">
            <img src={phone} alt="Phone Icon" className="icon" /></a>
            {/* Email */}
-
           <a href="mailto:Kailasam5107@gmail.com?subject=Hello&body=I want to connect with you!" > <img src={email} alt="Email Icon" className="icon" /></a>  
      </div>
      </div>

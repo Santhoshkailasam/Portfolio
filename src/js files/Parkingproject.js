@@ -1,19 +1,19 @@
 import React from "react";
-import HeaderComponent from "./components/headercomponent";
-import "./spotify.css"
-import Parkingtemplate from "./asserts/parking.png";
-import Main from "./asserts/parkingmain.jpg";
-import Login from "./asserts/parkinglogin.jpg";
-import Register from "./asserts/parkingRegister.jpg";
-import Saveparking from "./asserts/parkingSaved.jpg";
-import Map from "./asserts/parkingMaps.jpg";
-import Payment from "./asserts/parkingPayment.jpg";
-import Profile from "./asserts/parkingprofile.jpg";
-import Parkingticket from "./asserts/parkingTicket.jpg";
-import Booking from "./asserts/parkingBooking.jpg";
-import Nearby from "./asserts/Parking.jpg";
-import Footer from "./components/footer";
-import "./parkingproject.css";
+import HeaderComponent from "../components/headercomponent";
+import "../css files/spotify.css"
+import Parkingtemplate from "../js files/asserts/parking.png";
+import Main from "../js files/asserts/parkingmain.jpg";
+import Login from "../js files/asserts/parkinglogin.jpg";
+import Register from "../js files/asserts/parkingRegister.jpg";
+import Saveparking from "../js files/asserts/parkingSaved.jpg";
+import Map from "../js files/asserts/parkingMaps.jpg";
+import Payment from "../js files/asserts/parkingPayment.jpg";
+import Profile from "../js files/asserts/parkingprofile.jpg";
+import Parkingticket from "../js files/asserts/parkingTicket.jpg";
+import Booking from "../js files/asserts/parkingBooking.jpg";
+import Nearby from "../js files/asserts/Parking.jpg";
+import Footer from "../components/footer";
+import "../css files/parkingproject.css";
 function ParkingappProject() {
     return(
         <div>
