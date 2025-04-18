@@ -28,6 +28,9 @@ body {
   margin-top: 15px;
   font-weight: bold;
 }
+#download-btn{
+  display: none;
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -835,46 +838,206 @@ margin-top: 40px;
     font-weight: bold;
     font-size: 16px;
   }
-  .container{
-    flex-direction:column;
+  #download-btn {
+    display:flex;
+    background-color: #8a2be2;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    width:130px;
+    cursor: pointer;
+    transition: 0.3s;
+    height:30px;
+    align-items: center;
+    margin-left: 140px;
+    margin-top:23px;
+  }
+ #download-btn:hover{
+    background-color: #7a1fd1;
+    box-shadow: 0 0 10px #8a2be2;
   }
   .navbar{
     display:none;
   }
+  .container{
+    flex-direction:column;
+  }
   .description{
     margin-left: 10px;
-    width:200px;
+    width:400px;
   }
   .profile-img{
-    margin-left: 100px;
+    margin-left: 20px;
+    border-radius: 10px;
+    height: 200px;
+    width:200px;
+    box-shadow: 0px 0px 30px #f265ff;
   }
   .resume-btn{
-    margin-left: 100px;
-    width:150px;
+   display: none;
   }
   .icons-container{
-    margin-left: 110px;
+   display: none;
   }
   .resume-social-container{
     margin-top: 50px;
   }
   .participation-text{
-    margin-left: 100px;
+    margin-left: 160px;
+  }
+  hr {
+    width: 370px;
+  }
+
+  .btn2{
+    display: none;
   }
   .card-container{
     flex-direction: column;
-    margin-left: 200px;
+    margin-left: 130px;
     margin-top: 50px ;
   }
   .card{
     margin-bottom: 50px;
+    box-shadow: 0px 0px 20px #9B30FF;
   }
   .circleleft{
     display: none;
   }
   .circleright{
     display: none;
-    
+  }
+  #explore-btn{
+    background-color: #9B30FF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 170px;
+  }
+  #explore-btn:hover {
+    background-color: #7a1fd1;
+    box-shadow: 0 0 10px #8a2be2;
+  }
+  .innothon-img{
+    height:60px;
+    width:100px;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .para{
+    color: #B4B4B4;
+    font-size: 13px;
+    margin-left: 20px;
+  }
+  .btn3{
+    background-color:#313131;
+    color:#B4B4B4;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: 0.3s;
+  }
+  .btn3:hover {
+    box-shadow: 0 0 10px #B4B4B4;
+  }
+  .project-title{
+    color: #FFF;
+    margin-left: 570px;
+  }
+  .projects-text{
+    margin-left: 20px;
+    color: #FFF;
+    margin-left: 570px;
+  }
+  .project-box{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+  }
+  .title{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .projectcard-container{
+    box-shadow: 0px 4px 11px 4px white;
+    height: 200px;
+    width: 150px;
+    margin-left: 25%;
+  }
+  .title-text{
+    color: #FFF;
+    font-size: 10px;
+    margin-left: 14px;
+  }
+  .spotify-project-btn{
+    background-color:#313131;
+    color:#B4B4B4;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  .spotify-project-btn:hover {
+    box-shadow: 0 0 10px #B4B4B4;
+  }
+  
+  .vertical-line {
+    width: 2px; /* Adjust thickness */
+    height: 140px; /* Adjust height */
+    background-color: #313131; /* Set color */
+    margin-left: 31%;
+  }
+  .Spotify{
+    height:200px;
+    width:290px;
+    margin-left: 230PX;
+  }
+  .hr-line{
+     margin:0px;
+     width:300px;
+     margin-top: 100px;
+     background-color: #313131;
+  }
+  .projectcard-container2{
+    box-shadow: 0px 4px 11px 4px #9B30FF;
+    height: 200px;
+    width: 150px;
+  }
+  .title2{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin:0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .vertical-line2{
+    width: 2px; 
+    height: 140px; 
+    background-color: #313131; 
+    margin-left: 73%;
+  }
+  .Parking{
+    height:200px;
+    width:290px;
+    float: right;
+    margin-right:15%;
   }
 
 }

@@ -149,6 +149,7 @@ function Portfolio() {
        <div>
         <h3 className="name">KAILASAM N</h3>
        </div>
+       <a href="https://drive.google.com/uc?export=download&id=11mC4qp1Ry2hXYtrZxIjKprEa_cmkWgXA" download > <button  id="download-btn">Download Resume</button></a>
        <div className="navbar">
         <div >
             <h3 onClick={() => scrollToSection(participateRef)} style={{cursor:"pointer"}}>Participations</h3>
@@ -240,6 +241,7 @@ function Portfolio() {
                 <button className="participation-btn">&gt;</button>
             </div>
         </div>
+        <button  id="explore-btn" onClick={handleExplore}>Explore More &gt;&gt;</button>
         </section>
        <hr></hr>  
 
