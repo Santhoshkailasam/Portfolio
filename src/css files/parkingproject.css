@@ -28,3 +28,35 @@
     margin-left: 200px;
     margin-top: 100px;
 }
+.parking-git-btn{
+  margin-top: 20px;
+  margin-left: 16%;
+
+}
+/* mobile Responsive */
+
+@media(max-width:440px){
+  .image-describe-parking{
+    width: 500px;
+    margin-left: 30px;
+    font-size: 13px;
+}
+.parking-img{
+  width:150px;
+  height: 350px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.project-git-btn{
+  width: 130px;
+  height: 40px;
+  font-size: 13px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.parking-git-btn{
+  margin-top: 20px;
+  margin-left: 20%;
+
+}
+}

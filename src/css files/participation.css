@@ -97,13 +97,13 @@ body{
   .header{
       color: #fff;
       text-align: center;
-      margin-left: 50px;
+      margin-left:65px;
   }
   .header-content{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      width:70%;
+      justify-content: flex-start;
+      width:100%;
      
   }
   .back-icon{
@@ -118,10 +118,11 @@ body{
   }
   .participations-container{
      display: flex;
-     flex-direction: row;
+     flex-direction:column;
      margin-top: 150px;
      justify-content: center;
-     gap: 100px; 
+     gap: 100px;
+     margin-left: 50px;
      
   }
   .back-icon-circle{

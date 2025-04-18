@@ -108,7 +108,7 @@ function SpotifyProject() {
                 React Native, the page displays the user's name, email, profile picture, and a summary of their
                 selected artists, genres, and favorite playlists.</p>
         </div>
-        <div style={{display:"flex", justifyContent:"flex-end", marginTop:"20px",marginRight:"10%"}}>
+        <div className="git-btn-container">
             <a href="https://github.com/Santhoshkailasam/Spotifyclone"  
             target="_blank" 
             rel="noopener noreferrer"><button  className="git-btn">View in Git Repo</button></a>

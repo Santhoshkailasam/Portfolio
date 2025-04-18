@@ -61,3 +61,58 @@ li{
     background-color: #7a1fd1;
     box-shadow: 0 0 10px #8a2be2;
   }
+  .git-btn-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 10%;
+  }
+
+  
+  /* Responsive mobile screen */
+  @media(max-width:400px){
+    .spotifyimg-container {
+        margin-top: 100px;
+      }
+      .Spotify-img{
+          width:300px;
+          height: 200px;
+      }
+      .descripe-container{
+          margin-left: 30px;
+      }
+      h4{
+          font-size: 13px;
+      }
+      .Spotifydescription{
+        
+          width:270px;
+          margin-left: 30px;
+          font-size: 15px;
+      }
+      .login-img{
+          width:150px;
+          height: 350px;
+          margin-top: 20px;
+          margin-left: 10px;
+      }
+      .login-container{
+          display: flex;
+          flex-direction: row;
+      }
+      .image-describe{
+          width: 500px;
+          margin-left: 30px;
+          font-size: 13px;
+      }
+      .git-btn-container{
+        margin-right: 25%;
+      }
+      .git-btn{
+          width: 130px;
+          height: 40px;
+          font-size: 13px;
+          margin-top: 30px;
+        }
+    
+  }

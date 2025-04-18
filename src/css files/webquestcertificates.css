@@ -39,3 +39,32 @@
     flex-shrink: 0;
     margin-left: 35%;
 }
+
+/* Mobile View */
+@media (max-width:440px){
+.webquest-container{
+    margin-top: 30%;
+}
+.webquestcertificate-img{
+  height: 190px;
+  width: 250PX;
+}
+.webquestcertificate-img2{
+    height: 150px;
+    width: 200PX;
+  }
+.Subheading{
+    margin-left: 30px;
+    margin-top: 50px;;
+}
+.webquest-description{
+    width:250px;
+    margin-left: 70px;
+}
+.Certified{
+    border-radius: 8px;
+    width: 250px;
+    height: 214px;
+    margin-left: 15%;
+}
+}

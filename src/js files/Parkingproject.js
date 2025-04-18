@@ -160,7 +160,7 @@ function ParkingappProject() {
         </div>
 
         {/* button */}
-        <div style={{ marginTop:"20px",marginLeft:"16%"}}>
+        <div className="parking-git-btn" >
             <a href="https://github.com/Santhoshkailasam/Parkingapp"  
             target="_blank" 
             rel="noopener noreferrer"><button  className="project-git-btn">View in Git Repo</button></a>

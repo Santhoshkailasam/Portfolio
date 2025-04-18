@@ -5,10 +5,14 @@ import "../css files/Reactcompletion.css";
 import Footer from "../components/footer";
 function ReactCompletion() {
   return (
-    <div>
+    <div >
      <HeaderComponent text="ReactJS Certificate" />
      <div className="react-container">
         <img src={reactcertificate} alt="React Completion Certificate" className="react-img" />
+     </div>
+     <div>
+      <h3 className="about-cert">About Certificate</h3>
+      <p className="about-cert">This Certificate is provided By infosys for completing the React Js Course</p>
      </div>
      <Footer />
     </div>
