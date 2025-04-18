@@ -906,9 +906,6 @@ margin-top: 40px;
   .projectcard-container{
     margin-left: 28%;
   }
-  .spotify-project-btn:hover {
-    box-shadow: 0 0 10px #B4B4B4;
-  }
   
   .vertical-line {
     margin-left: 50%;
@@ -1104,5 +1101,35 @@ textarea{
 .input-message::placeholder {
   font-size: 14px;  
 }
+}
 
+/* Desktop view */
+@media (max-width:1500px){
+ .resume-btn{
+  margin-left: 300px;
+ } 
+ .circleleft{
+  margin-left: 23%;
+ }
+ .participation-text{
+  margin-left:650px;
+ }
+ .project-title{
+  margin-left: 650px;
+}
+.project-box{
+  margin-left: 6%;
+}
+.vertical-line2{
+  width: 2px; 
+  height: 140px; 
+  background-color: #313131; 
+  margin-left: 68%;
+}
+.Parking{
+  height:200px;
+  width:290px;
+  float: right;
+  margin-right:21%;
+}
 }
