@@ -359,6 +359,7 @@ function Portfolio() {
                 ))}
             </div>
         </div>
+        <button  className="explore-btn" onClick={Certificates}>Explore More &gt;&gt;</button>
         </section>
         <hr></hr>
 

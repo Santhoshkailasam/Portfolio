@@ -130,13 +130,14 @@ hr {
   background-color: #313131; /* Set the desired color */
   width: 700px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .participation-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width:80%;
+  margin-bottom: 20px;
   
 }
 .participation-text {
@@ -782,6 +783,9 @@ margin-top: 40px;
 
 }
 
+
+/* Mobile view  */
+
 @media (max-width: 440px) {
   .navbarbox {
     background-color:#2A2A2A;
@@ -841,9 +845,6 @@ margin-top: 40px;
   .icons-container{
    display: none;
   }
-  .resume-social-container{
-    margin-top: 50px;
-  }
   .participation-text{
     margin-left: 120px;
   }
@@ -870,6 +871,7 @@ margin-top: 40px;
     display: none;
   }
   .explore-btn{
+    display: flex;
     background-color: #9B30FF;
     color: white;
     padding: 10px;
@@ -896,20 +898,7 @@ margin-top: 40px;
     font-size: 13px;
     margin-left: 20px;
   }
-  .btn3{
-    background-color:#313131;
-    color:#B4B4B4;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 40px;
-    transition: 0.3s;
-  }
-  .btn3:hover {
-    box-shadow: 0 0 10px #B4B4B4;
-  }
+  
   .project-title{
     color: #FFF;
     margin-left: 140px;
@@ -959,7 +948,7 @@ margin-top: 40px;
  .hr-line3{
   width: 290px;
   margin-left: 40px;
-  margin-top: 25vh;
+  margin-top: 10vh;
  }
  .projects-text{
   margin-left: 130px;
