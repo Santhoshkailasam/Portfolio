@@ -833,7 +833,7 @@ margin-top: 40px;
     margin-left: 30px;
     margin-top: 25px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
   }
   .container{
     flex-direction:column;
@@ -842,7 +842,8 @@ margin-top: 40px;
     display:none;
   }
   .description{
-    margin-left: 300px;
+    margin-left: 10px;
+    width:200px;
   }
   .profile-img{
     margin-left: 100px;
