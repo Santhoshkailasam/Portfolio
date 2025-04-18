@@ -865,7 +865,7 @@ margin-top: 40px;
     flex-direction:column;
   }
   .description{
-    margin-left: 20px;
+    margin-left: 10px;
     width:330px;
     font-size: 15px;
   }
@@ -889,9 +889,9 @@ margin-top: 40px;
     margin-left: 120px;
   }
   hr {
-    width: 370px;
+    width: 290px;
+    margin-left: 40px;
   }
-
   .btn2{
     display: none;
   }
@@ -920,7 +920,7 @@ margin-top: 40px;
     margin-top: 20px;
     cursor: pointer;
     transition: 0.3s;
-    margin-left: 126px;
+    margin-left: 129px;
   }
   #explore-btn:hover {
     background-color: #7a1fd1;
@@ -953,92 +953,52 @@ margin-top: 40px;
   }
   .project-title{
     color: #FFF;
-    margin-left: 570px;
-  }
-  .projects-text{
-    margin-left: 20px;
-    color: #FFF;
-    margin-left: 570px;
-  }
-  .project-box{
-    display: flex;
-    flex-direction: row;
-    margin-left: 2%;
-  }
-  .title{
-    color: #FFF;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 10px;
+    margin-left: 140px;
   }
   .projectcard-container{
-    box-shadow: 0px 4px 11px 4px white;
-    height: 200px;
-    width: 150px;
-    margin-left: 25%;
-  }
-  .title-text{
-    color: #FFF;
-    font-size: 10px;
-    margin-left: 14px;
-  }
-  .spotify-project-btn{
-    background-color:#313131;
-    color:#B4B4B4;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 30px;
+    margin-left: 28%;
   }
   .spotify-project-btn:hover {
     box-shadow: 0 0 10px #B4B4B4;
   }
   
   .vertical-line {
+    margin-left: 50%;
+  }
+  .Spotify{
+    height:150px;
+    width:200px;
+    margin-left: 70PX;
+  }
+  .project-box{
+    flex-direction:column;
+  }
+  .hr-line{
+    display: none;
+  }
+  #vertical-line{
     width: 2px; /* Adjust thickness */
     height: 140px; /* Adjust height */
     background-color: #313131; /* Set color */
-    margin-left: 31%;
-  }
-  .Spotify{
-    height:200px;
-    width:290px;
-    margin-left: 230PX;
-  }
-  .hr-line{
-     margin:0px;
-     width:300px;
-     margin-top: 100px;
-     background-color: #313131;
+    margin-left: 50%;
   }
   .projectcard-container2{
-    box-shadow: 0px 4px 11px 4px #9B30FF;
-    height: 200px;
-    width: 150px;
-  }
-  .title2{
-    color: #FFF;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    margin:0px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    margin-left: 100px;
   }
   .vertical-line2{
     width: 2px; 
     height: 140px; 
     background-color: #313131; 
-    margin-left: 73%;
+    margin-left: 50%;
   }
   .Parking{
-    height:200px;
-    width:290px;
-    float: right;
-    margin-right:15%;
+    height:150px;
+    width:200px;
+    margin-right: 75px;
   }
-
+ .hr-line3{
+  width: 290px;
+  margin-left: 40px;
+ }
+ 
 }

@@ -271,6 +271,7 @@ function Portfolio() {
           <img src={Spotify} alt="Spotify" className="Spotify" />
           </div>
           <hr className="hr-line"/>
+          <div id="vertical-line"></div>
           <div className="projectcard-container2">
              <h3 className="title2">Parking App</h3>
              <p className="title-text">Parking App is a user-friendly React Native frontend 
