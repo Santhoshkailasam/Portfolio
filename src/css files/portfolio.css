@@ -57,10 +57,19 @@ body {
   background-color: #7a1fd1;
   box-shadow: 0 0 10px #8a2be2;
 }
+.aboutbox{
+  display: flex;
+  justify-content: center;
+}
+.aboutme{
+  color: #FFF;
+  margin-top: 120px;
+  font-weight: bold;
+}
 .description{
   color: #FFF;
   margin-left: 180px;
-  margin-top: 70px;
+  margin-top: 10px;
   font-size: 18px;
   width:600px;
 }
@@ -120,7 +129,8 @@ hr {
   height: 2px; /* Adjust the thickness */
   background-color: #313131; /* Set the desired color */
   width: 700px;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .participation-container {
   display: flex;
@@ -809,6 +819,9 @@ margin-top: 40px;
   }
   .container{
     flex-direction:column;
+  }
+  .About-me{
+    color: #FFF;
   }
   .description{
     margin-left: 10px;
