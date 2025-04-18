@@ -1035,16 +1035,6 @@ margin-top: 40px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
-
-.para {
-  background-color: #2c2c2e;
-  padding: 10px;
-  border-radius: 12px;
-  color: #b4b4b4;
-  font-size: 13px;
-  text-align: center;
-}
-
 .certificate-circleleft,
 .certificate-circleright {
       display:none;
