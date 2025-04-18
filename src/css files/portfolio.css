@@ -852,7 +852,7 @@ margin-top: 40px;
     height:30px;
     align-items: center;
     margin-left: 90px;
-    margin-top:23px;
+    margin-top:20px;
   }
  #download-btn:hover{
     background-color: #7a1fd1;
@@ -886,7 +886,7 @@ margin-top: 40px;
     margin-top: 50px;
   }
   .participation-text{
-    margin-left: 140px;
+    margin-left: 120px;
   }
   hr {
     width: 370px;
@@ -897,7 +897,7 @@ margin-top: 40px;
   }
   .card-container{
     flex-direction: column;
-    margin-left: 110px;
+    margin-left: 90px;
     margin-top: 50px ;
   }
   .card{
@@ -920,7 +920,7 @@ margin-top: 40px;
     margin-top: 20px;
     cursor: pointer;
     transition: 0.3s;
-    margin-left: 150px;
+    margin-left: 126px;
   }
   #explore-btn:hover {
     background-color: #7a1fd1;
