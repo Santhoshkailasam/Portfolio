@@ -59,4 +59,15 @@
   margin-left: 20%;
 
 }
+
+}
+
+@media (max-width:1024px) and (min-width:740px){
+  .parking-img{
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .image-describe-parking{
+    margin-left: 150px;
+  }
 }

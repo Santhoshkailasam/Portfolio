@@ -116,3 +116,16 @@ li{
         }
     
   }
+
+  @media (max-width:1024px) and (min-width:740px){
+    
+    .descripe-container{
+        margin-left: 80px;
+    }
+    .login-img{
+        margin-left: 80px;
+    }
+    .image-describe{
+        margin-left: 150px;
+    }
+  }

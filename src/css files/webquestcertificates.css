@@ -68,3 +68,14 @@
     margin-left: 15%;
 }
 }
+@media (max-width:1024px) and (min-width:740px){
+    .Subheading{
+        margin-left: 100px;
+    }
+    .webquest-description{
+        margin-left: 140px;
+    }
+    .Certified{
+        margin-left: 28%;
+    }
+}

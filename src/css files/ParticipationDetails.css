@@ -40,3 +40,12 @@
         font-size: 15px;
     }
 }
+
+@media (max-width:1024px) and (min-width:740px){
+    .subheading{
+        margin-left:35px;
+    }
+    .project-text{
+        margin-left: 100px;
+    }
+}
