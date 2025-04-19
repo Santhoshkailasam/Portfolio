@@ -19,3 +19,8 @@
     width: 220px;
     text-align: left;
 }
+@media (max-width:1024px) and (min-width:740px){
+  #footer{
+   display: none;
+  }
+}

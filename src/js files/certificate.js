@@ -58,7 +58,9 @@ function Certificate() {
                         </div>
                     ))}
                 </div>
+                <div id="footer">
                 <Footer />
+                </div>
         </div>
     )
 }
