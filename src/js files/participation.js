@@ -42,7 +42,7 @@ function Participation() {
     }
   };
     return (
-        <div>
+        <div className="Maincontainer">
         <HeaderComponent text="Participation"/>
         <div className="participations-container">
                     {participation.map((participation) => (
@@ -61,7 +61,9 @@ function Participation() {
                         </div>
                     ))}
                 </div>
+                <div className="Footer-container">
                    <Footer />
+                   </div>
 
         </div>
     );

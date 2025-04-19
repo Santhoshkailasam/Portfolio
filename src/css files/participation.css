@@ -42,7 +42,7 @@ body{
    margin-top: 150px;
    justify-content: center;
    gap: 100px; 
-   flex:1;
+   
 }
 .participation-card {
     background-color: #1c1c1c;
@@ -123,6 +123,7 @@ body{
      justify-content: center;
      gap: 100px;
      margin-left: 50px;
+     flex: 1;
      
   }
   .back-icon-circle{
@@ -174,5 +175,13 @@ body{
   @media (max-width:1024px) and (min-width:740px){
     .participations-container{
       gap:50px;
+    }
+    .Maincontainer{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .Footer-container{
+      margin-top: 60px;
     }
   }
