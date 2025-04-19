@@ -468,7 +468,7 @@ margin-top: 50px;
   border-radius: 50%; /* Makes it round */
   border: 1px solid #313131; /* Optional: Adds a border around the circle */
   padding: 0% ;
-  margin-top: 100px;
+  margin-top: 50px;
   cursor: pointer;
   margin-right: 70px;
 }
@@ -484,7 +484,7 @@ margin-top: 50px;
   border-radius: 50%; /* Makes it round */
   border: 1px solid #313131; /* Optional: Adds a border around the circle */
   padding: 0% ;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 70px;
   cursor: pointer;
 }
@@ -990,7 +990,7 @@ textarea{
     width: 90%;
    }
    .project-title{
-    margin-left:490px;
+    margin-left:450px;
    }
    .projectcard-container{
     margin-left: 200px;
@@ -999,6 +999,18 @@ textarea{
     margin-left: 270px;
    }
    .Spotify{
-    margin-left: 110px;
+    margin-left: 115px;
+   }
+   .hr-line{
+    width:230px;
+   }
+   .Parking{
+    margin-right: 10%;
+   }
+   .vertical-line2{
+    margin-left: 75%;
+   }
+   .projects-text{
+    margin-left:450px;
    }
 }
