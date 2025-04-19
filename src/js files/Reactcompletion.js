@@ -14,7 +14,9 @@ function ReactCompletion() {
       <h3 className="about-cert">About Certificate</h3>
       <p className="about-cert">This Certificate is provided By infosys for completing the React Js Course</p>
      </div>
+     <div className="foot1">
      <Footer />
+     </div>
     </div>
   );
 }

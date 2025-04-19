@@ -54,7 +54,9 @@ function Project() {
                         </div>
                     ))}
                 </div>
+                <div className="foot">
                 <Footer />
+                </div>
         </div>
     )
 }

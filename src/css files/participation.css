@@ -176,11 +176,6 @@ body{
     .participations-container{
       gap:50px;
     }
-    .Maincontainer{
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
     .Footer-container{
       display: none;
     }

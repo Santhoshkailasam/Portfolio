@@ -37,3 +37,10 @@
   .Project-btn:hover{
     box-shadow: 0 0 10px #B4B4B4;
   }
+
+
+  @media (max-width:1024px) and (min-width:740px){
+    .foot{
+      display: none;
+    }
+  }

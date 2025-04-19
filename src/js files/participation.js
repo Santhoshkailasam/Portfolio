@@ -42,7 +42,7 @@ function Participation() {
     }
   };
     return (
-        <div className="Maincontainer">
+        <div >
         <HeaderComponent text="Participation"/>
         <div className="participations-container">
                     {participation.map((participation) => (
