@@ -958,4 +958,47 @@ textarea{
 }
 }
 
+/* responsive for tab */
+@media (max-width:1024px) and (min-width:740px){
+     .navbarbox{
+       justify-content: flex-start;
+     }
+     .navbar{
+      margin-left: 30%;
+      gap:10%;
+     }
+     .profile-img{
+      margin-top: 0px;
 
+     }
+     .description{
+      margin-left: 140px;
+     }
+     .resume-btn{
+       margin-left: 160px;
+     }
+     .resume-social-container{
+      width:70%
+     }
+   .participation-text{
+    margin-left: 440px;
+   }
+   .circleleft{
+    margin-left: 11%;
+   }
+   .participation-container{
+    width: 90%;
+   }
+   .project-title{
+    margin-left:490px;
+   }
+   .projectcard-container{
+    margin-left: 200px;
+   }
+   .vertical-line{
+    margin-left: 270px;
+   }
+   .Spotify{
+    margin-left: 110px;
+   }
+}
