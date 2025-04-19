@@ -42,7 +42,7 @@ body{
    margin-top: 150px;
    justify-content: center;
    gap: 100px; 
-   
+   flex:1;
 }
 .participation-card {
     background-color: #1c1c1c;

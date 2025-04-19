@@ -4,8 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #000;
-  margin-bottom:0%;
-  margin-top: 0%;
+  height: 100%;
 }
 .navbarbox {
   display: flex;
