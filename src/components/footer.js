@@ -2,6 +2,7 @@ import React from "react";
 import iconphone from "../js files/asserts/phone-icon.png";
 import iconmail from "../js files/asserts/email-icon.png";
 import "./footer.css";
+import Logo from "./portfoliologo.png"
 function Footer() {
     return (
         <div>
@@ -43,6 +44,12 @@ function Footer() {
          </div>
          </a>
           </div>
+          </div>
+          <div className="rights">
+            <img src={Logo} alt="Portfolio img" className="portimage" />
+            <div className="Copyright">
+               2025 Copyrights
+            </div>
           </div>
         </footer>
         </div>

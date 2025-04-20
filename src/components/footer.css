@@ -1,6 +1,6 @@
 .footer{
     background-color: #2A2A2A;
-    height:250px;
+    height:300px;
     margin-top: 50px;
   }
   .footer-box{
@@ -34,6 +34,17 @@
     color: #FFF; /* Purple shade */
     text-decoration: none; /* Optional: removes underline */
     cursor: pointer;
+  }
+  .portimage{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .rights{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #FFF;
   }
 /* Responsive Design */
   @media (max-width: 1024px) and (min-width: 768px){
