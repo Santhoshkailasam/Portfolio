@@ -207,7 +207,7 @@ function Portfolio() {
          </div>
      </div>
      <div   className="resume-social-container" >
-            <a href="https://drive.google.com/uc?export=download&id=11mC4qp1Ry2hXYtrZxIjKprEa_cmkWgXA" download > <button  className="resume-btn">Download Resume</button></a>
+            <a href="https://drive.google.com/uc?export=download&id=1d3ejo_NIB5lSvnq-cGxm4oT1mWJbMEIQ" download > <button  className="resume-btn">Download Resume</button></a>
      <div className="icons-container">
       {/* Github */}
           <a href="https://github.com/Santhoshkailasam" 
