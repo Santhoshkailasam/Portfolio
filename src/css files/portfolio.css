@@ -607,7 +607,7 @@ textarea{
   .navbarbox {
     background-color:#2A2A2A;
     height:70px;
-    justify-content: flex-start;
+    justify-content:space-between;
   }
   .name{
     margin-left: 20px;
@@ -628,7 +628,7 @@ textarea{
     transition: 0.3s;
     height:30px;
     align-items: center;
-    margin-left: 110px;
+    margin-right: 10px;
     margin-top:20px;
   }
  #download-btn:hover{
