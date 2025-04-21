@@ -48,7 +48,7 @@ function Footer() {
           <div className="rights">
             <img src={Logo} alt="Portfolio img" className="portimage" />
             <div className="Copyright">
-               2025 Copyrights
+               @ 2025 Copyrights
             </div>
           </div>
         </footer>
