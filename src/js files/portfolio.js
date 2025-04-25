@@ -1,6 +1,6 @@
 import React from "react";
 import "../css files/portfolio.css";
-import { useState,useRef } from "react";
+import { useState,useRef,useEffect } from "react";
 import github from "../js files/asserts/github.png";
 import linkedin from "../js files/asserts/Linkedin.png";
 import phone from "../js files/asserts/Phone.png";
@@ -88,7 +88,7 @@ function Portfolio() {
       });
     };
   
-
+  
 
     // For Swipe
 
@@ -144,6 +144,29 @@ function Portfolio() {
           setActiveIndex((prev) => (prev === certificates.length - 1 ? 0 : prev + 1));
       };
 
+
+      //animation
+      useEffect(() => {
+        const elements = document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right");
+      
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate");
+            } else {
+              entry.target.classList.remove("animate"); // Reset when out of view
+            }
+          });
+        }, {
+          threshold: 0.1,
+        });
+      
+        elements.forEach((el) => observer.observe(el));
+      
+        return () => observer.disconnect();
+      }, []);
+      
+    
       // useref
 
       const participateRef = useRef(null);
@@ -182,16 +205,16 @@ function Portfolio() {
             <h3 onClick={() => scrollToSection(certificatRef)} style={{cursor:"pointer"}}>Certificates</h3>
         </div>
         <div>
-            <button  className="btn" onClick={() => scrollToSection(getintouchRef)} style={{}}>Get in Touch</button>
+            <button  className="btn" onClick={() => scrollToSection(getintouchRef)} >Get in Touch</button>
         </div>
         </div>
     </div>
 
     {/* Desription */}
-       <div class="aboutbox">
+       <div class="aboutbox slide-in-right">
        <h3 className="aboutme">About me</h3>
        </div>
-    <div className="container">
+    <div className="container fade-in">
         <div>
           <p className="description">I'm a dedicated web developer with a passion for creating seamless and visually 
            appealing websites that provide exceptional user experiences. Skilled in both
@@ -206,7 +229,7 @@ function Portfolio() {
            <img src={profile} alt="Profile" className="profile-img" />
          </div>
      </div>
-     <div   className="resume-social-container" >
+     <div   className="resume-social-container slide-in-right" >
             <a href="https://drive.google.com/uc?export=download&id=1d3ejo_NIB5lSvnq-cGxm4oT1mWJbMEIQ" download > <button  className="resume-btn">Download Resume</button></a>
      <div className="icons-container">
       {/* Github */}
@@ -228,7 +251,7 @@ function Portfolio() {
 
      {/* Participation  */}
      <section ref={participateRef}>
-       <div className="participation-container">
+       <div className="participation-container slide-in-right">
           <div className="participation">
             <h3 className="participation-text">Participations</h3>
           </div> 
@@ -236,7 +259,8 @@ function Portfolio() {
             <button  className="btn2" onClick={handleExplore}>Explore More &gt;&gt;</button>
           </div>
         </div>
-        <div className="participation-card-container">
+        <div className="slide-in-left">
+        <div className="participation-card-container ">
             <div className="circleleft">
             <button  className="participation-btn" >&lt;</button>
             </div>
@@ -264,13 +288,14 @@ function Portfolio() {
                 <button className="participation-btn">&gt;</button>
             </div>
         </div>
+        </div>
         <button  class="explore-btn" onClick={handleExplore}>Explore More &gt;&gt;</button>
         </section>
        <hr></hr>  
 
        {/* Projects */}
 
-       <div className="participation-container">
+       <div className="participation-container slide-in-right">
           <div className="participation">
             <h3 className="project-title" >Projects</h3>
           </div> 
@@ -281,6 +306,7 @@ function Portfolio() {
 
         {/* Project Card */}
          <section ref={projectRef}>
+          <div className="slide-in-left">
           <div className="projectcard-container">
              <h3 className="title">Spotify Clone</h3>
              <p className="title-text">A visually appealing Spotify <br/>clone built using React 
@@ -305,13 +331,14 @@ function Portfolio() {
           </div>
           <div class="vertical-line2"></div>
           <img src={Parking} alt="Spotify" className="Parking" />
+          </div>
           </section>
           <button  className="explore-btn" onClick={Project }>Explore More &gt;&gt;</button>
           <hr className="hr-line3"></hr> 
 
           {/* Certificate section */}
           <section ref={certificatRef}>
-          <div className="participation-container">
+          <div className="participation-container slide-in-right">
           <div className="participation">
             <h3 className="projects-text">Certificates</h3>
           </div> 
@@ -319,8 +346,7 @@ function Portfolio() {
             <button  className="btn2" onClick={Certificates}>Explore More &gt;&gt;</button>
           </div>
         </div>
-
-          <div className="sliding-effect-container"
+          <div className="sliding-effect-container fade-in">
            onTouchStart={handleTouchStart}
            onTouchMove={handleTouchMove}
            onTouchEnd={handleTouchEnd}>
@@ -365,7 +391,7 @@ function Portfolio() {
 
         {/* Connect */}
         <section ref={getintouchRef}>
-         <div className="connect-container">
+         <div className="connect-container loop-animation">
          <form onSubmit={sendEmail}>
               <div className="form-box">
                  <h2 className="heading">

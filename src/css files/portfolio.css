@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   background-color: #000;
   height: 100%;
+  overflow-x: hidden;
 }
 .navbarbox {
   display: flex;
@@ -80,6 +81,8 @@ body {
   border: 2px solid #ccc; /* Optional: Adds a border around the circle */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
   margin-top: 20px;
+   animation: moveLeftToRightLoop 5s linear infinite;
+  position: relative;
 }
 .resume-social-container{
  display: flex;
@@ -601,6 +604,11 @@ textarea{
 
 
 
+
+
+
+
+
 /* Mobile view  */
 
 @media (max-width: 440px) {
@@ -1015,4 +1023,60 @@ textarea{
   .connect-container {
     height:50vh;
   }
+}
+
+
+
+
+
+
+
+
+
+
+/* Initial State: Hidden with transform */
+.fade-in,
+.slide-in-left,
+.slide-in-right {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+  overflow-x: hidden;
+}
+
+/* Slide from left */
+.slide-in-left {
+  transform: translateX(-50px);
+}
+
+/* Slide from right */
+.slide-in-right {
+  transform: translateX(50px);
+}
+
+/* Animate Class: Final State when in viewport */
+.animate {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+@keyframes moveLeftToRightLoop {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes moveTopTobottomLoop {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-1px); }
+  50% { transform: translateX(1px); }
+  75% { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
+}
+.loop-animation {
+  animation: moveLeftToRightLoop 10s infinite ease-in-out;
 }
