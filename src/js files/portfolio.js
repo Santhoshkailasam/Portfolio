@@ -346,7 +346,7 @@ function Portfolio() {
             <button  className="btn2" onClick={Certificates}>Explore More &gt;&gt;</button>
           </div>
         </div>
-          <div className="sliding-effect-container fade-in">
+          <div className="sliding-effect-container slide-in-left">
            onTouchStart={handleTouchStart}
            onTouchMove={handleTouchMove}
            onTouchEnd={handleTouchEnd}>
