@@ -268,19 +268,19 @@ function Portfolio() {
                  <div className="card">
                    <h3 className="card-text">KCG <br /> Innothon</h3>
                    <img src={Innothon} alt="KCG Innothon" className="innothon-img" />
-                   <p className="para">I have participated in KCG Innothon which Gives<br/>me a lot of experience</p>
+                   <p className="para">I have participated in KCG Innothon which Gives me a lot of experience</p>
                    <button className="btn3" onClick={Kcginnothon}>View in detail</button>
                  </div>
                  <div className="card">
                    <h3 className="card-text">KCG <br /> Webquest</h3>
                    <img src={Webquest} alt="KCG Webquest" className="innothon-img" />
-                   <p className="para">I have participated in KCG Webquest which Gives<br/>me a lot of experience</p>
+                   <p className="para">I have participated in KCG Webquest which Gives me a lot of experience</p>
                    <button className="btn3" onClick={Kcgwebquest}>View in detail</button>
                  </div>
                  <div className="card">
                    <h3 className="card-text">KCG <br /> Hackathon</h3>
                    <img src={Hackathon} alt="KCG Hackathon" className="innothon-img" />
-                   <p className="para">I have participated in KCG Hackathon which Gives<br/>me a lot of experience</p>
+                   <p className="para">I have participated in KCG Hackathon which Gives me a lot of experience</p>
                    <button className="btn3" onClick={Kcghackathon}>View in detail</button>
                  </div>
                 </div>
@@ -391,7 +391,7 @@ function Portfolio() {
 
         {/* Connect */}
         <section ref={getintouchRef}>
-         <div className="connect-container loop-animation">
+         <div className="connect-container slide-in-right">
          <form onSubmit={sendEmail}>
               <div className="form-box">
                  <h2 className="heading">
