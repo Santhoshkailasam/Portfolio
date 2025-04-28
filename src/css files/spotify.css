@@ -129,3 +129,36 @@ li{
         margin-left: 150px;
     }
   }
+  @media (max-width:1700px) and (min-width:1600px){
+    .subheading{
+        font-size: 24px;
+    }
+      .descripe-container{
+          margin-left: 190px;
+          margin-top: 50px;
+          font-size: 20px;
+      }
+      .Spotifydescription{
+          width:1250px;
+          margin-left: 30px;
+      }
+      li{
+          margin-bottom: 20px;
+      }
+      .login-img{
+          margin-top: 40px;
+          margin-left: 300px;
+      }
+      .image-describe{
+          font-size: 23px;
+          width: 800px;
+          margin-left: 200px;
+          margin-top: 100px;
+      }
+      .git-btn{
+          font-size: 18px;
+          width: 210px;
+          height: 60px;
+        }
+      
+  }

@@ -18,7 +18,7 @@
 .Subheading{
     color: #FFF;
     margin-left: 190px;
-    margin-top: 50px;;
+    margin-top: 50px;
 }
 .webquest-description{
     color: #FFF;
@@ -78,4 +78,28 @@
     .Certified{
         margin-left: 28%;
     }
+}
+@media (max-width: 1700px) and (min-width: 1600px) {
+    .webquestcertificate-img{
+        height: 300px;
+        width: 500PX;
+      }
+      .webquestcertificate-img2{
+          height: 200px;
+          width: 300PX;
+          display: flex;
+          justify-content: center;
+        }
+      .Subheading{
+         font-size: 24px;
+      }
+      .webquest-description{
+
+          width:1200px;
+          font-size: 23px;
+      }
+      .Certified{
+          margin-top: 50px;
+      }
+      
 }

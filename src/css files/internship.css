@@ -94,3 +94,27 @@
         height:250px;
     }
 }
+
+@media (max-width: 1700px) and (min-width: 1600px) {
+    .Overview{
+        font-size: 24px;
+    }
+    .Intern-Describe{
+        width:1200px;
+        font-size: 23px;
+    }
+    .internship-list{
+       font-size: 23px;
+    }
+    .internship-list2{
+       font-size: 23px;
+        margin-left: 15%;
+    }
+    .Intern-Describe2{
+        width:1200px;
+        font-size: 23px;
+    }
+    .internship-certificate-image{
+        margin-left: 41%;
+    }
+}

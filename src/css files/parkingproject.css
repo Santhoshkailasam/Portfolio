@@ -71,3 +71,19 @@
     margin-left: 150px;
   }
 }
+@media (max-width: 1700px) and (min-width: 1600px) {
+.project-git-btn{
+   width: 210px;
+   height: 60px;
+   margin-left: 30px;
+ }
+ .image-describe-parking{
+   width: 900px;
+   margin-left: 200px;
+   margin-top: 100px;
+   font-size: 23px;
+}
+.parking-git-btn{
+ margin-left: 10%;
+}
+}

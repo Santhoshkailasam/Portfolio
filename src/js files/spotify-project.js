@@ -1,4 +1,4 @@
-import React from "react";
+    import React from "react";
 import HeaderComponent from "../components/headercomponent";
 import Spotifyimg from "../js files/asserts/spotifytemplate.png";
 import "../css files/spotify.css"
