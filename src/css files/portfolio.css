@@ -196,6 +196,7 @@ hr {
   height: 270px;
   width: 190px;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 .card:hover{
   box-shadow: 0px 0px 20px #9B30FF;
