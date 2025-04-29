@@ -147,7 +147,7 @@ function Portfolio() {
 
       //animation
       useEffect(() => {
-        const elements = document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right");
+        const elements = document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right,.slide-down");
       
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
@@ -189,12 +189,12 @@ function Portfolio() {
   return (
     <div>
         {/* Navbar */}
-    <div className="navbarbox">
+    <div className="navbarbox ">
        <div>
         <h3 className="name">KAILASAM N</h3>
        </div>
        <a href="https://drive.google.com/uc?export=download&id=1d3ejo_NIB5lSvnq-cGxm4oT1mWJbMEIQ" download className="d-btn     " > <button  id="download-btn">Download Resume</button></a>
-       <div className="navbar">
+       <div className="navbar slide-down">
         <div >
             <h3 onClick={() => scrollToSection(participateRef)} style={{cursor:"pointer"}}>Participations</h3>
         </div>

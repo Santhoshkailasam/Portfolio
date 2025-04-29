@@ -1384,7 +1384,7 @@ textarea{
    width: 60%;
   }
   .resume-btn{
-    margin-left: 310px;
+    margin-left: 320px;
   }
   .icons-container {
     gap: 50px; /* Space between icons */
@@ -1508,4 +1508,19 @@ textarea{
 }
 .loop-animation {
   animation: moveLeftToRightLoop 10s infinite ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.9s ease-out forwards;
 }
